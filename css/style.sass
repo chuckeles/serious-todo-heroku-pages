@@ -1,0 +1,55 @@
+$black:         #0a0503
+$primary-dark:  #6b0f1a
+$primary:       #780116
+$primary-light: #ba2d0b
+$accent:        #f7b538
+$white:         #f5fafc
+
+*
+  box-sizing: border-box
+
+html
+  background-color: $white
+  color:            $black
+  font-family:      Oswald, Verdana, sans-serif
+  font-size:        18px
+  height:           100%
+
+a
+  color:           $accent
+  cursor:          pointer
+  text-decoration: none
+
+button
+  cursor: pointer
+
+td
+  padding: .5em
+
+.fa
+  padding-right:  .2em
+  position:       relative
+  top:            -.1em
+  vertical-align: middle
+
+.container
+  display:         flex
+  flex-direction:  column
+  min-height:      100vh
+
+  &.primary
+    background-color: $primary
+    color:            $white
+
+.page
+  align-items:     center
+  display:         flex
+  flex-direction:  column
+  flex-grow:       1
+  justify-content: center
+  margin:          0 auto
+  max-width:       60em
+  padding:         2em
+
+  & + &
+    padding-top: 0
